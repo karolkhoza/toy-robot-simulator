@@ -38,9 +38,6 @@ The toy robot must not fall off the table during movement. This also includes th
 
 Deliverables:
 
-The solution needs to be delivered in Typescript as a CLI Node.js app. 
-Please provide the following in your response:
-
     ● Github repo containing the code to the solution 
     ● Instructions on how to run the project
     ● All relevant tests
