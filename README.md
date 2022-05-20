@@ -43,3 +43,8 @@ Deliverables:
     ● All relevant tests
 
 Instructions:
+
+    1. Clone https://github.com/karolkhoza/toy-robot-simulator.git to local machine.
+    2. Open cloned folder on local machine.
+    3. Open index.html in chrome browser
+    3. Enter the coordinates for X & Y(0-4, North/South/East/west) and directions(Move/Left/Right/Report) you'd like to test then click on "Place", and          your toy robot should move around.
