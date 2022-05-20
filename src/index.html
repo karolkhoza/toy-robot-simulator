@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta charset="utf-8">
+      <title>Toy Robot Simulator</title>
+   </head>
+   <body>
+       <!--These are the commands given to the robot-->
+      <div class="controls" >
+         <label>X:</label>
+         <select id="x">
+            <option value="0">0</option>
+            <option value="20">1</option>
+            <option value="40">2</option>
+            <option value="60">3</option>
+            <option value="80">4</option>
+         </select>
+         <label>Y:</label>
+         <select id="y">
+            <option value="80">0</option>
+            <option value="60">1</option>
+            <option value="40">2</option>
+            <option value="20">3</option>
+            <option value="0">4</option>
+         </select>
+         <label>Direction(F):</label>
+         <select id="f">
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="east">East</option>
+            <option value="west">West</option>
+         </select>
+	  <br/><br/>
+      <!--this will place the toy robot on the square table top -->
+         <button onclick="placeRobot()">Place Robot</button>
+      </div>
+      <div id="container">
+         <div id="board">
+            <div id="robot"></div>
+         </div>
+      </div>
+      <div id="reportLog"></div>
+      <!--These functions will help with giving the robot directions-->
+      <div class="controls">
+         <input type="button" value="↰" onclick="turnLeft()">
+         <input type="button" value="↥" onclick="move()">
+         <input type="button" value="↱" onClick="turnRight()">
+      </div>
+      <script src="robot.js"></script>
+      <link href="style.css" rel="stylesheet">
+   </body>
+</html>
