@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.wrapper {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 504px;
+}
+
+.welcome-msg h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #8ebfc2;
+}
+
+.place-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+}
+
+#place {
+  height: 50px;
+  margin-right: 5px;
+}
+
+.panel-half {
+  width: 50%;
+}
+
+.panel-right {
+  text-align: right;
+
+}
+
+.label-text {
+  padding: 10px 0;
+}
+
+.button-container {
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    width: 500px;
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    
+}
+
+.table-container {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    font-size: 0;
+    margin-top: 10%;
+}
+.output {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    width: 500px;
+    line-height: 50px;
+    background-color: #e0e0e0;
+    border: 2px solid black;
+    text-align: center;
+    font-family: "Verdana";
+    font-size: 16px;
+}
+.row {
+    display: block;
+}
+.row:nth-child(even) .cell:nth-child(even) {
+    background: #e0e0e0;
+}
+.row:nth-child(odd) .cell:nth-child(odd) {
+    background: #e0e0e0;
+}
+.cell {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    z-index: -1;
+}
+button {
+    width: 100px;
+    font-family: "Verdana";
+    font-size: 16px;
+    background-color: #3F51B5;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+#robot {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 15px;
+  color: white;
+  background-color: #FF4081;
+  line-height: 50px;
+  text-align: center;
+  font-family: "Verdana";
+  font-size: 12px;
+  z-index: 1;
+  position: absolute;
+}

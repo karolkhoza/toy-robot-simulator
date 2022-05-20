@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Toy Robot Simulator</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="welcome-msg">
+            <h1>Toy Robot Simulator</h1>
+        </div>
+        <!--These are the coordinates you'd give the robot-->
+        <div class="place-container">
+            <div class="panel-half panel-left">
+                <div class="label-text">
+                    <label>X Coordinate</label>
+                    <select id="placeX">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="label-text">
+                    <label>Y Coordinate</label>
+                    <select id="placeY">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <!--directs the robot to face a certain direction-->
+                <div class="label-text">
+                <label>Facing</label>
+                    <select id="placeF">
+                        <option value="NORTH">North</option>
+                        <option value="SOUTH">South</option>
+                        <option value="EAST">East</option>
+                        <option value="WEST">West</option>
+                    </select>
+                </div>
+            </div>
+            <div class="panel-half panel-right">
+                <button id="place">PLACE</button>
+            </div>
+        </div>
+        <!--instructs the robot to move in certain directions-->
+        <div class="button-container">
+            <button id="move" disabled>MOVE</button>
+            <button id="left" disabled>LEFT</button>
+            <button id="right" disabled>RIGHT</button>
+            <button id="report" disabled>REPORT</button>
+        </div>
+        <!--This is the code for the tabletop for the robot to move on-->
+        <div class="table-container">
+            <div id="robot" class="hidden" ></div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+        </div>
+        <div id="output" class="output hidden"></div>
+    </div>
+
+    <script type="text/javascript" src="robot.js"></script>
+</body>
+</html>
